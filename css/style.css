@@ -4,12 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+/*scaffolding*/
 .wrapper{
     height: 100vh;
     width: 100%;
 }
-
 .page{
     width: 100%;
     height: calc(100vh - 90px);
@@ -27,8 +34,6 @@ header{
     height: 80px;
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -39,4 +44,71 @@ footer{
     position: fixed;
     left: 0;
     bottom: 0;
+}
+/*aside*/
+/*lista home*/
+aside{
+    padding: 10px;
+}
+.logo{
+    width: 60%;
+}
+.home{
+    margin: 20px 0;
+}
+.home li{
+    height: 20px;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+.home img{
+    height: 100%;
+}
+.gray{
+    color: #666666;
+}
+.gray img{
+    fill: #666666;
+}
+aside h2{
+    text-transform: uppercase;
+}
+.playlist li{
+    font-size: 1.4em;
+    margin-top: 15px;
+    color: #666666;
+}
+.fa-solid.fa-square-plus{
+    font-size: 4em;
+    margin-right: 0.2em;
+}
+.playlist :first-child{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    width: 230px;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 90px;
+    font-size: 1.8em;
+    background-color: #000;
+}
+.jhon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
+.profilepic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(../img/profile.svg);
+    background-position: center;
+    display: inline-block;
+    background-color: gray;
+    margin-right: 10px;
 }

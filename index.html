@@ -80,8 +80,52 @@
                 </nav>
             </main>
         </div>
-        <footer>
-
+        <!-- Barra di riproduzione -->
+        <footer class="clearfix">
+            <!-- Canzone (sinistra) -->
+            <div class="song clearfix">
+                <img src="./img/sinister.jpeg" alt="Sinister">
+                <div class="song-name">
+                    <p>Sinister</p>
+                    <p>Brano Nome</p>
+                </div>
+                <div class="actions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <!-- Pulsanti e durata canzone (centro) -->
+            <div class="time">
+                <!-- Pulsanti -->
+                <div class="play-buttons">
+                    <i class="fa-regular fa-shuffle"></i>
+                    <i class="fa-regular fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-forward-step"></i>
+                    <i class="fa-regular fa-rotate-right"></i>
+                </div>
+                <!-- Durata canzone -->
+                <div class="duration">
+                    <div class="current">
+                        0:25
+                    </div>
+                    <div class="timeline">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="total">
+                        4:35
+                    </div>
+                </div>
+            </div>
+            <!-- Volume (destra) -->
+            <div class="volume">
+                <i class="fa-regular fa-list-ul"></i>
+                <i class="fa-regular fa-desktop"></i>
+                <i class="fa-regular fa-volume-high"></i>
+                <div class="max-volume">
+                    <div class="actual-volume"></div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

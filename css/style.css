@@ -12,6 +12,12 @@ body{
 ul{
     list-style-type: none;
 }
+/*general*/
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 /*scaffolding*/
 .wrapper{
     height: 100vh;
@@ -158,4 +164,116 @@ nav{
 }
 .navbar :first-child .nav-active{
     display: block;
+}
+/*barra di riproduzione*/
+/*canzone (sinistra)*/
+.song, .volume{
+    width: 20%;
+    float: left;
+}
+.song{
+    height: 90px;
+    padding: 2em 1em;
+}
+.song img{
+    height: 100%;
+    float: left;
+}
+.song-name{
+    float: left;
+    margin: 1.3em;
+}
+.song-name :first-child{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.song-name :last-child{
+    color: gray;
+    font-weight: 500;
+}
+.actions{
+    float: left;
+    margin-left: 1.2em;
+    color: gray;
+    font-size: 1.7em;
+    line-height: 50px;
+    cursor: pointer;
+}
+.actions .fa-folder{
+    margin-left: 1em;
+}
+/*pulsanti e durata canzone (centro)*/
+.time{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+/*pulsanti*/
+.play-buttons{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+.play-buttons .fa-regular{
+    font-weight: 600;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.fa-regular.fa-circle-play{
+    font-weight: 400;
+    font-size: 3em;
+}
+/*durata canzone*/
+.duration{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.timeline{
+    background-color: #5A5A5A;
+    width: 600px;
+    height: 5px;
+    border-radius: 3px;
+    position: relative;
+}
+.progress{
+    background-color: #C1C1C1;
+    width: 150px;
+    height: 5px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+}
+/*volume (destra)*/
+.volume{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    padding-right: 1em;
+}
+.volume .fa-regular{
+    font-weight: 600;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.max-volume{
+    width: 150px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #5A5A5A;
+    position: relative;
+}
+.actual-volume{
+    background-color: #C1C1C1;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
 }

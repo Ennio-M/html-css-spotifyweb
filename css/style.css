@@ -32,7 +32,7 @@ main{
 }
 header{
     height: 80px;
-    width: 100%;
+    width: calc(100% - 230px);
     position: fixed;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
@@ -46,13 +46,14 @@ footer{
     bottom: 0;
 }
 /*aside*/
-/*lista home*/
 aside{
     padding: 10px;
 }
+/*logo*/
 .logo{
     width: 60%;
 }
+/*lista home*/
 .home{
     margin: 20px 0;
 }
@@ -67,9 +68,7 @@ aside{
 .gray{
     color: #666666;
 }
-.gray img{
-    fill: #666666;
-}
+/*lista playlist*/
 aside h2{
     text-transform: uppercase;
 }
@@ -86,6 +85,7 @@ aside h2{
     display: flex;
     align-items: center;
 }
+/*div bloccato inferiore*/
 .profile{
     width: 230px;
     padding: 10px;
@@ -111,4 +111,25 @@ aside h2{
     display: inline-block;
     background-color: gray;
     margin-right: 10px;
+}
+.jhon span{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+/*sezione principale (destra)*/
+/*intestazione (pulsante upgrade)*/
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.upgrade{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 1em 2em;
+    border-radius: 40px;
+    border: 2px solid #FFFFFF;
 }

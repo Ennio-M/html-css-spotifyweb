@@ -1,3 +1,7 @@
+/* scrollbar */
+::-webkit-scrollbar-thumb:hover{
+    background-color: yellowgreen;
+}
 /* effetti lista home */
 .home li:hover{
     color: #FFFFFF;
@@ -6,7 +10,7 @@
     display: block;
 }
 /* effetti lista playlist */
-.crea:hover, .playlist li:hover{
+.crea:hover, .playlist li a:hover{
     color: #FFFFFF;
 }
 /* effetti div bloccato inferiore */
@@ -17,6 +21,10 @@
 .upgrade:hover{
     font-size: 1.5em;
 }
+.upgrade:active{
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
 /* effetti barra di navigazione */
 .navbar li:hover{
     color: #FFFFFF;
@@ -25,8 +33,12 @@
     display: block;
 }
 /* effetti contenuto principale */
-.album-img:hover .play{
+.box:hover .play{
     display: block;
+}
+.box:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
 }
 /* effetti barra di riproduzione */
 /* canzone (sinistra) */
@@ -35,7 +47,8 @@
 }
 /* pulsanti e durata canzone (centro) */
 .play-buttons .fa-circle-play:hover{
-    font-size: 3.5em;
+    transform: scale(1.2);
+    transition: all .5s;
 }
 .progress:hover{
     background-color: yellowgreen;

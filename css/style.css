@@ -24,6 +24,17 @@ ul{
 .pointer{
     cursor: pointer;
 }
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: #5A5A5A;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #C1C1C1;
+    border-radius: 4px;
+}
 /*scaffolding*/
 .wrapper{
     height: 100vh;
@@ -40,9 +51,8 @@ aside{
 }
 main{
     width: calc(100% - 230px);
-    height: 100vh;
+    height: calc(100vh - 90px);
     overflow-y: auto;
-    padding-bottom: 90px;
     background-color: #141922;
 }
 header{
@@ -107,16 +117,18 @@ aside h2{
 .playlist li{
     font-size: 1.4em;
     margin-top: 15px;
-    color: #666666;
-    cursor: pointer;
 }
-.playlist-cont{
-    height: 230px;
-    overflow-y: auto;
+.playlist li a{
+    text-decoration: none;
+    color: #666666;
 }
 .fa-solid.fa-square-plus{
     font-size: 4em;
     margin-right: 0.2em;
+}
+.playlist-cont{
+    height: calc(100% - 340px);
+    overflow-y: auto;
 }
 /*div bloccato inferiore*/
 .profile{
@@ -252,6 +264,10 @@ nav{
     font-weight: 400;
     font-size: 3em;
 }
+.play-space{
+    width: 3.5em;
+text-align: center;
+}
 /*durata canzone*/
 .duration{
     height: 50%;
@@ -331,16 +347,17 @@ nav{
     margin: 2em 1em;
 }
 .row{
-    margin: 0 1%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    gap: 1%;
-    width: 100%;
+    align-items: flex-start;
+    width: calc(100% - 0.6%);
+    margin-left: .6%;
 }
 .box{
-    height: 100%;
-    width: calc((100% - 7%) / 6);
+    width: calc(100% / 6);
+    padding: .6%;
+    cursor: pointer;
 }
 .album-img{
     position: relative;

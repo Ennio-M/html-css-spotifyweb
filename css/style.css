@@ -34,6 +34,9 @@ aside{
 }
 main{
     width: calc(100% - 230px);
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 90px;
     background-color: #141922;
 }
 header{
@@ -78,18 +81,24 @@ aside{
 aside h2{
     text-transform: uppercase;
 }
+.crea{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    margin-top: 15px;
+}
 .playlist li{
     font-size: 1.4em;
     margin-top: 15px;
     color: #666666;
 }
+.playlist-cont{
+    height: 230px;
+    overflow-y: auto;
+}
 .fa-solid.fa-square-plus{
     font-size: 4em;
     margin-right: 0.2em;
-}
-.playlist :first-child{
-    display: flex;
-    align-items: center;
 }
 /*div bloccato inferiore*/
 .profile{
@@ -276,4 +285,48 @@ nav{
     border-radius: 2px;
     position: absolute;
     left: 0;
+}
+/*contenuto*/
+/*sezione recently played*/
+.section-title{
+    font-size: 1.8em;
+    margin: 2em 1em;
+}
+.row{
+    margin: 0 1%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 1%;
+    width: 100%;
+}
+.box{
+    height: 100%;
+    width: calc((100% - 7%) / 6);
+}
+.album-img img{
+    width: 100%;
+}
+.album-title{
+    padding-top: 1em;
+    text-align: center;
+}
+.album-title h3{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.album-title p{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 0.8em;
+}
+/*sezione creato per jhon doe*/
+.section-title p{
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+/*sezione artisti più popolari*/
+.box.box-artist img{
+    border-radius: 50%;
 }

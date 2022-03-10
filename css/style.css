@@ -18,6 +18,12 @@ ul{
     display: table;
     clear: both;
 }
+.gray{
+    color: #666666;
+}
+.pointer{
+    cursor: pointer;
+}
 /*scaffolding*/
 .wrapper{
     height: 100vh;
@@ -70,12 +76,23 @@ aside{
     height: 20px;
     font-size: 1.4em;
     margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.bar{
+    height: 100%;
+    width: 2px;
+    background-color: yellowgreen;
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    display: none;
+}
+.home :first-child .bar{
+    display: block;
 }
 .home img{
     height: 100%;
-}
-.gray{
-    color: #666666;
 }
 /*lista playlist*/
 aside h2{
@@ -91,6 +108,7 @@ aside h2{
     font-size: 1.4em;
     margin-top: 15px;
     color: #666666;
+    cursor: pointer;
 }
 .playlist-cont{
     height: 230px;
@@ -257,6 +275,16 @@ nav{
     position: absolute;
     left: 0;
 }
+.indicator{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: silver;
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    display: none;
+}
 /*volume (destra)*/
 .volume{
     height: 100%;
@@ -286,6 +314,16 @@ nav{
     position: absolute;
     left: 0;
 }
+.vol-indicator{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: silver;
+    position: absolute;
+    right: -4px;
+    bottom: -2px;
+    display: none;
+}
 /*contenuto*/
 /*sezione recently played*/
 .section-title{
@@ -304,6 +342,9 @@ nav{
     height: 100%;
     width: calc((100% - 7%) / 6);
 }
+.album-img{
+    position: relative;
+}
 .album-img img{
     width: 100%;
 }
@@ -320,6 +361,18 @@ nav{
     font-weight: 600;
     margin-top: 0.8em;
 }
+.play{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    line-height: 230px; 
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 /*sezione creato per jhon doe*/
 .section-title p{
     font-size: 0.8em;
@@ -328,5 +381,8 @@ nav{
 }
 /*sezione artisti più popolari*/
 .box.box-artist img{
+    border-radius: 50%;
+}
+.play.play-round{
     border-radius: 50%;
 }

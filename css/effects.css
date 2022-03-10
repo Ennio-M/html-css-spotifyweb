@@ -1,0 +1,52 @@
+/* effetti lista home */
+.home li:hover{
+    color: #FFFFFF;
+}
+.home li:active .bar{
+    display: block;
+}
+/* effetti lista playlist */
+.crea:hover, .playlist li:hover{
+    color: #FFFFFF;
+}
+/* effetti div bloccato inferiore */
+.installa span:hover{
+    color: #FFFFFF;
+}
+/* effetti intestazione */
+.upgrade:hover{
+    font-size: 1.5em;
+}
+/* effetti barra di navigazione */
+.navbar li:hover{
+    color: #FFFFFF;
+}
+.navbar li:active .nav-active{
+    display: block;
+}
+/* effetti contenuto principale */
+.album-img:hover .play{
+    display: block;
+}
+/* effetti barra di riproduzione */
+/* canzone (sinistra) */
+.actions i:hover{
+    color: #FFFFFF;
+}
+/* pulsanti e durata canzone (centro) */
+.play-buttons .fa-circle-play:hover{
+    font-size: 3.5em;
+}
+.progress:hover{
+    background-color: yellowgreen;
+}
+.progress:hover .indicator{
+    display: block;
+}
+/* volume (destra) */
+.actual-volume:hover{
+    background-color: yellowgreen;
+}
+.actual-volume:hover .vol-indicator{
+    display: block;
+}

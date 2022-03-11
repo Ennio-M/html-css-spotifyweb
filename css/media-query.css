@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: calc(100% / 4);
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .volume .fa-regular{
+        font-size: 1em;
+    }
+    .play-buttons{
+        gap: 3em;
+    }
+    .timeline{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 576px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: calc(100% / 2);
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .volume .fa-regular{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 540px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: calc(100% / 2);
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-small{
+        display: block;
+    }
+    .home{
+        margin: 40px 0;
+    }
+    .home a, #PL, .crea, .playlist-cont, .installa span, .jhon span{
+        display: none;
+    }
+    .jhon{
+        border: none;
+        margin: 0;
+    }
+    .jhon .profilepic{
+        height: 25px;
+        width: 25px;
+    }
+    aside{
+        width: auto;
+    }
+    main, header{
+        width: calc(100% - 50px);
+    }
+    .play-buttons{
+        gap: 2em;
+    }
+    .timeline{
+        width: 50%;
+    }
+}
+@media screen and (max-height: 550px){
+    .profile{
+        display: none;
+    }
+    .playlist-cont{
+        height: calc(100% - 260px);
+    }
+}
